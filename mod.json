@@ -1,17 +1,21 @@
 {
-	"geode": "",
+	"geode": "v4.0.0-beta.1",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "rgdps.annountment.cc",
-	"name": "RGDPS ANNOUNCEMENT",
-	"version": "1.0",
-	"developer": "RGDPS TEAM DEVS",
-	"description": "RECEIVED THE ANNOUNCEMENT FROM RGDPS NOTICE",
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	}
+	"id": "rgdps.announcement.cc",
+	"name": "RGDPS Announcement",
+	"version": "v1.0.0",
+	"developer": "RGDPS Team Devs",
+	"description": "Receive announcements and notices directly from RGDPS.",
+	"dependencies": [
+		{
+			"id": "geode-sdk.node-ids",
+			"version": ">=v1.20.0",
+			"importance": "required"
+		}
+	]
 }
