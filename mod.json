@@ -1,16 +1,16 @@
 {
-	"geode": "$GEODE_VERSION",
+	"geode": "",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
+	"id": "rgdps.annountment.cc",
+	"name": "RGDPS ANNOUNCEMENT",
+	"version": "1.0",
+	"developer": "RGDPS TEAM DEVS",
+	"description": "RECEIVED THE ANNOUNCEMENT FROM RGDPS NOTICE",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	}
