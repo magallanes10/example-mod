@@ -43,11 +43,11 @@ class $modify(MyMenuLayer, MenuLayer) {
         networkRequest.get("https://your-api-url.com/announcement.json")
             .listen([](web::WebResponse* res) {
                 if (res->isSuccess()) {
-                    auto data = res->json().value_or(matjson::Object());
+                    auto data = res->json().value_or(matjson::Value(matjson::Object()));
                     
-                    std::string subject = data["subject"].asString().value_or("Notice");
-                    std::string message = data["message"].asString().value_or("");
-                    std::string from = data["from"].asString().value_or("RobTop");
+                    std::string subject = data["subject"].as_string();
+                    std::string message = data["message"].as_string();
+                    std::string from = data["from"].as_string();
 
                     std::string lastSeen = Mod::get()->getSavedValue<std::string>("last-announcement-id", "");
 
