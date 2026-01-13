@@ -39,8 +39,7 @@ class $modify(MyMenuLayer, MenuLayer) {
     bool init() {
         if (!MenuLayer::init()) return false;
 
-        auto networkRequest = web::WebRequest();
-        networkRequest.get("https://your-api-url.com/announcement.json")
+        web::Web::get("https://your-api-url.com/announcement.json")
             .listen([](web::WebResponse* res) {
                 if (res->isSuccess()) {
                     auto data = res->json().value_or(matjson::Value(matjson::Object()));
